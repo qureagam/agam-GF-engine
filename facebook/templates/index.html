@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE WEB</title>
+    <link rel="stylesheet" href="{{url_for('static',filename ='css/index.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/myimage.png')}}" type="image/x-icon">
+</head>
+<body>
+
+    <div class="setting">
+        <button  class="img">
+            ...
+        </button>
+    </div>
+
+    <form class="searchbar" action="search" method="post">
+
+        <h1 class="greet">SEE WEB</h1>
+        <h4 class="today"></h4>
+
+        <div class="srch-in">
+            <input type="text" class="text" name="mm" placeholder="Search the web" spellcheck="false" value>
+            <div class="bx">
+                <button class="ghok"> <img src="static/images/ser.png" alt="" width="30px" height="30px"></button>
+            </div>
+            
+        </div>
+        
+        <button class="web">
+            Web Search
+        </button>
+    </form>
+
+    <div class="set">
+
+        <div class="websatime">
+            <img src="static/images/wikipedia.png" alt="" width="40px" height="40px">
+            <button class="mode" onclick="window.location.pathname ='/wiki' ">
+                Wiki..
+            </button>
+        </div>
+
+        <div class="websatime">
+            <img src="static/images/news.png" alt="" width="40px" height="40px" style="background-color: transparent;">
+            <button class="mode" onclick="window.location.pathname ='/news' ">
+                News
+            </button>
+        </div>
+        
+    </div>
+
+    <script src="{{url_for('static',filename ='js/image_selector.js')}}"></script>
+</body>
+</html>

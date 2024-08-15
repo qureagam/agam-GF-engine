@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    scroll-behavior: smooth;
+}
+.head{
+    width: 100%;
+    box-shadow: 0px 0px 3px gray;
+    min-height: 8vh;
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+form{
+    margin-left: 50px;
+    width: 40%;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px rgb(98, 98, 98);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+form:hover{
+    box-shadow: 0px 0px 6px gray;
+}
+.read{
+    font-size: 30px;
+    font-family: monospace;
+    color: rgb(66, 66, 66);
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+input{
+    width: 80%;
+    font-size: 17px;
+    font-family: monospace;
+    color: gray;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+button{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    font-family: monospace;
+    padding: 5px;
+    border: none;
+}
+.links{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.tr{
+    height: 10px;
+}
+.quest{
+    font-size: 19px;
+    color: rgb(72, 0, 188);
+    font-family: monospace;
+    margin-left: 100px;
+}
+span{
+    font-size: 16px;
+    color: rgb(72, 0, 188);
+    font-family: monospace;
+    margin-left: 100px;
+}
+
+.main-search-for{
+    width: fit-content;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 4px;
+    height: fit-content;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.img-link{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+.for-link{
+    font-size: 15px;
+    font-family: monospace;
+}
+.for-image{
+    width: 35px;
+    height: 35px;
+}
+
+.tit-page{
+    font-size: 25px;
+    color: rgb(140, 0, 255);
+    cursor: pointer;
+    font-family: monospace;
+}
+.tit-page:hover{
+    text-decoration: underline;
+}
+.about-hat{
+    width: fit-content;
+    padding: 5px;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+}
+.mn{
+    width: 90%;
+    margin: 0px auto;
+    height: 1px;
+    background-color: gray;
+    box-shadow: 0px 0px 1px gray;
+}
+.youtube{
+    box-shadow: 0px 0px 2px gray;
+    padding: 8px;
+    width: fit-content;
+    margin-left:20px;
+}
+.hol{
+    display: flex;
+    width: 100%;
+}
+.other-links{
+    width: 50%;
+    height: fit-content;
+}
+.link-div{
+    width: 80%;
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+a{
+    font-family: monospace;
+    font-size: 19px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+.wik-you{
+    width:100%;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(47, 47, 181);
+}
+.details{
+    font-size: 17px;
+    font-family: monospace;
+    width: 50%;
+    text-align: justify;
+}
+.lgt{
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.twi-thigs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.in{
+    margin-top: 50px;
+    display: flex;
+    gap: 7px;
+    margin-left: 100px;
+}
+.tk{
+    box-shadow: 0px 0px 3px gray;
+    transition: 0.5s ease;
+    border-radius: 4px;
+}
+.tk:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.def{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 100px;
+    width: 30%;
+    text-align: justify;
+    color: rgb(71, 104, 99);
+}

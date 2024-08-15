@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See web</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/wiki.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/myimage.png')}}" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+
+        <div class="searchbar">
+            <button class="red" onclick="window.location.pathname ='/' ">See Web</button>
+            <form class="search" method="post">
+                <div class="back">
+                    <
+                </div>
+                <input type="text" class="se" name="v" placeholder="Enter your query" spellcheck="false">
+                <button><img src="static/images/ser.png" width="30px" height="30px"></button>
+            </form>
+
+        </div>
+        <div class="tr"></div>
+
+        <div class="res">
+            
+        {%for i in dt%}
+              <div class="wiksget">
+                  <p class="qr">
+                    {{data}}
+                  </p>
+              </div>
+        {%endfor%}
+        </div>
+
+        <footer>
+            <span class="spn">See Web &copy; reserved - </span>
+        </footer>
+
+    </div>
+    <script src="{{url_for('static' , filename='js/wiki.js')}}"></script>
+</body>
+</html>

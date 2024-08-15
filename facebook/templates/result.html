@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE WEB</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/result.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/myimage.png')}}" type="image/x-icon">
+</head>
+<body>
+    <div class="head">
+        <button class="read" onclick=" window.location.pathname ='/' "> < SEE WEB</button>
+        <form class="searchbar" action="seeweb" method="post">
+            <input type="text" name="is" value='{{ttps}}' spellcheck="false">
+            <button class="searchbtn">
+                Search
+            </button>
+        </form>
+    </div>
+    <div class="tr"></div>
+    <p class="quest">
+        {{ttp}}
+    </p>
+    <p class="quest">
+        {{tpp1}}
+    </p>
+    <span>Some results are</span>
+
+<br><br>
+    {% if link_page!='false'%}
+    <div class="main-search-for">
+        <div class="img-link">
+            <img src='{{image_page}}' class="for-image">
+            <h4 class="for-link">{{link_page}}</h4>
+        </div>
+        <h2 class="tit-page" onclick="window.open('{{link_page}}')">
+            {{title_page}}
+        </h2>
+    </div>
+
+    {%endif%}
+
+    {%if i_img %}
+    <div class="in">
+      {%for i in i_img%}
+        <img src="{{i}}" class="tk">
+      {%endfor%}
+    </div>
+    {%endif%}
+    <br>
+    <br>
+    {%if ff %}
+       <h2 class='def'>{{ff}}</h2>
+    {%endif%}
+
+
+    <br>
+    <br>
+<div class="mn"></div>
+
+<div class="hol">
+
+    <div class="other-links">
+        {% for link in results%}
+            <div class="link-div">
+                <a href="{{ link }}" target="_blank">{{link}}</a>
+            </div>
+        {% endfor %}
+
+        {%for i in brid%}
+            <div class="link-div">
+                <a href="{{i}}" target="_blank">{{i}}</a>
+             </div>
+        {%endfor%}
+    </div>
+
+    <div class="wik-you">
+        
+        {%if deatil_page!='a'%}
+        <div class="about-hat">
+                <h5 class="lgt">{{ytb}}</h5>
+                <h3 class="details">
+                    {{detail_page}}
+                </h3>
+        </div>
+      {%endif%}
+      <br>
+      {%if ytb%}
+      <div class="youtube">
+        <div class="twi-thigs">
+            <img src="{{url_for('static',filename='images/youtube.png')}}" width="40px" height="40px" style="box-shadow: 0px 0px 2px gray;">
+            <h4 class="for-link">https//www.youtube.com</h4>
+        </div>
+        <h2 class="tit-page" onclick="window.open('https://www.youtube.com/results?search_query='+'{{ytb}}')">
+            Youtube search
+        </h2>
+      </div>
+      {%endif%}
+
+    </div>
+</div>
+
+<br><br>
+</body>
+</html>
